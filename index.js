@@ -53,9 +53,13 @@ app.use("/api/reviews", reviewRouter);
 app.use("/api/inquiries", inquiryRouter);
 app.use("/api/orders",orderRouter)
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+app.get("/", () => {
+  console.log("Server is running");
 });
 
-//malith5@gmail.com 123  - Customer
-////malith6@gmail.com 123  - Admin
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
+});
+
+//sahan@gmail.com 123  - Customer
+//sahan6@gmail.com 123  - Admin
